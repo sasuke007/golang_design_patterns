@@ -10,13 +10,13 @@ type Triangle struct {
 	color Color
 }
 
-func (Triangle) draw() {
+func (t Triangle) draw() {
 	fmt.Println("Drawing Triangle")
 }
 
 type Circle struct{}
 
-func (Circle) draw() {
+func (c Circle) draw() {
 	fmt.Println("Drawing Circle")
 }
 
@@ -26,13 +26,13 @@ type Color interface {
 
 type Red struct{}
 
-func (Red) fillColor() {
+func (r Red) fillColor() {
 	fmt.Println("Filling Red Color")
 }
 
 type Green struct{}
 
-func (Green) fillColor() {
+func (g Green) fillColor() {
 	fmt.Println("Filling Green Color")
 }
 
